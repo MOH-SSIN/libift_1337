@@ -6,7 +6,7 @@
 #    By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 12:57:29 by mez-zahi          #+#    #+#              #
-#    Updated: 2024/11/08 17:23:57 by mez-zahi         ###   ########.fr        #
+#    Updated: 2024/11/08 18:38:32 by mez-zahi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ OBJS_BONUS = $(BSRCS:.c=.o)
 HEADER = libft.h
 LIBC = ar rc
 CC = cc
-RM = v
+RM = rm -rf
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
