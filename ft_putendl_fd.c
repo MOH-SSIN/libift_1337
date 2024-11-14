@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:55:19 by mez-zahi          #+#    #+#             */
-/*   Updated: 2024/11/08 14:41:03 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2024/11/14 20:33:56 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	if (fd < 0)
+	if (fd < 0 || !s)
 		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);

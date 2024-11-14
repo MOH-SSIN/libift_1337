@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:54:03 by mez-zahi          #+#    #+#             */
-/*   Updated: 2024/11/08 14:26:21 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2024/11/09 14:47:32 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		{
 			ptr = *lst;
 			*lst = (*lst)->next;
-			ft_lstdelone_bonus(ptr, del);
+			ft_lstdelone(ptr, del);
 		}
 	}
 }

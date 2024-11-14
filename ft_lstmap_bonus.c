@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -17,19 +17,19 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*cellule;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	cellule = NULL;
 	while (lst)
 	{
-		cellule = ft_lstnew_bonus(f(lst->content));
+		cellule = ft_lstnew(f(lst->content));
 		if (!cellule)
 		{
-			ft_lstclear_bonus(&new_list, del);
+			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
-		ft_lstadd_back_bonus(&new_list, cellule);
+		ft_lstadd_back(&new_list, cellule);
 		lst = lst->next;
 	}
 	return (new_list);

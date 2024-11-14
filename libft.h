@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:57:16 by mez-zahi          #+#    #+#             */
-/*   Updated: 2024/11/08 16:29:20 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2024/11/09 14:29:30 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int n, int fd);
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putendl_fd(char const *s, int fd);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstadd_back(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(void *));

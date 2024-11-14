@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:56:49 by mez-zahi          #+#    #+#             */
-/*   Updated: 2024/11/08 15:05:57 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2024/11/14 20:33:37 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	fin = ft_index_fin(s1, set);
 	if (debut > fin)
 		return (ft_strdup(""));
-	len = fin - debut + 1;
-	ptr = (char *)malloc(sizeof(char) * (len + 1));
+	len = fin - debut;
+	ptr = (char *)malloc(sizeof(char) * len);
 	if (!ptr)
 		return (NULL);
 	return (ft_new_chaine(ptr, s1, debut, len));
