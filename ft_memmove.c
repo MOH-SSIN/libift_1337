@@ -40,3 +40,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char tab[] = "mohcine";
+	// printf("%s\n",(char *)ft_memmove(tab,tab,sizeof(tab)));
+	printf("%s\n",(char *)memmove(tab,tab,sizeof(tab)));
+}

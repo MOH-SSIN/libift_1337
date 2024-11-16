@@ -22,7 +22,7 @@ BSRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(BSRCS:.c=.o)
 HEADER = libft.h
-LIBC = ar rc
+LIBC = ar rcs
 CC = cc
 RM = rm -rf
 CFLAGS = -Wall -Wextra -Werror

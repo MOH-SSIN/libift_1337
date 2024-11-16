@@ -75,7 +75,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	fin = ft_index_fin(s1, set);
 	if (debut > fin)
 		return (ft_strdup(""));
-	len = fin - debut;
+	len = fin - debut + 1;
 	ptr = (char *)malloc(sizeof(char) * len);
 	if (!ptr)
 		return (NULL);
